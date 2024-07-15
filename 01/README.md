@@ -1,7 +1,7 @@
 ### p5.toio に関する記事の情報
 
 - p5.toio の作者の記事
-   - [p5.toioのα版リリースについて #JavaScript - Qiita](https://qiita.com/tetunori_lego/items/23642e50129d934876e5)
+   - [p5.toioのα版リリースについて - Qiita](https://qiita.com/tetunori_lego/items/23642e50129d934876e5)
 - Qiita で書かれた p5.toio に関する記事（タグのついた記事のリスト）
    - [「p5.toio」の検索結果 - Qiita](https://qiita.com/search?q=p5.toio&sort=created)
 
