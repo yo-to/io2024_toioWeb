@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://tetunori.github.io/p5.toio/dist/0.8.0/p5.toio.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>toioとの接続とランプの点灯</title>
+  </head>
+  <body>
+    <main></main>
+    <script>
+      const gCubes = [];
+
+      function setup() {
+        createCanvas(400, 400);
+        background(220);
+
+        textSize(16);
+        fill(0);
+      }
+
+      // ページ上でマウスをクリックするごとにtoioと接続し、ランプを点灯させる
+      function mouseClicked() {
+        P5tCube.connectNewP5tCube().then((cube) => {
+          gCubes.push(cube);
+          cube?.turnLightOn("red");
+        });
+      }
+
+      function keyPressed() {
+        if (key === "a") {
+          // 簡易プレイマットの座標
+          // 左上 X 座標 98、	左上 Y 座標 142、	右下 X 座標 402、	右下 Y 座標 358
+
+          // 座標と移動速度をある範囲内のランダムな値で指定
+          const aimX = floor(random(148, 352));
+          const aimY = floor(random(192, 308));
+          const randomSpeed = floor(random(50, 100));
+          // toio を目標地点に移動させる
+          gCubes[0]?.moveTo({ x: aimX, y: aimY }, randomSpeed);
+
+          // ブラウザ上で目標地点の座標と移動速度を表示
+          background(220);
+          text(`目標地点のX座標: ${aimX}`, 15, 30);
+          text(`目標地点のY座標: ${aimY}`, 15, 55);
+          text(`移動速度: ${randomSpeed}`, 15, 80);
+        }
+      }
+    </script>
+  </body>
+</html>
