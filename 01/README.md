@@ -12,7 +12,7 @@
 ### toio の技術仕様（公式のページ）
 - [toio™コア キューブ 技術仕様](https://toio.github.io/toio-spec/)
 
-### toio の公式／非公式のライブラリや開発環境
+### toio の公式／非公式のライブラリや開発環境（p5.toio以外）
 - [【Unity】morikatron/toio-sdk-for-unity: Unityでtoio™コア キューブを制御するための開発環境](https://github.com/morikatron/toio-sdk-for-unity/)
 - [【Python】toio.py/README.ja.md at main · toio/toio.py](https://github.com/toio/toio.py/blob/main/README.ja.md)
 - [【Arduino言語】M5StackToio/README_jp.md at master · kenichi884/M5StackToio](https://github.com/kenichi884/M5StackToio/blob/master/README_jp.md)
