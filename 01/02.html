@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://tetunori.github.io/p5.toio/dist/0.8.0/p5.toio.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>toioとの接続とランプの点灯</title>
+  </head>
+  <body>
+    <main></main>
+    <script>
+      const gCubes = [];
+
+      function setup() {
+        createCanvas(400, 400);
+        background(220);
+      }
+
+      function draw() {
+        for (const cube of gCubes) {
+          // マウスのX座標に応じてtoioが動く速度が変わる
+          const speed = map(mouseX, 0, width, 8, 40);
+          cube?.move(speed, speed * 2.5, 0);
+        }
+      }
+
+      // ページ上でマウスをクリックするごとにtoioと接続し、ランプを点灯させる
+      function mouseClicked() {
+        P5tCube.connectNewP5tCube().then((cube) => {
+          gCubes.push(cube);
+          cube?.turnLightOn("red");
+        });
+      }
+    </script>
+  </body>
+</html>
