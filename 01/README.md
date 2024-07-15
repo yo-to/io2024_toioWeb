@@ -10,7 +10,8 @@
 - [GitHub のリポジトリ](https://github.com/tetunori/p5.toio)
 
 ### toio の技術仕様（公式のページ）
-- [toio™コア キューブ 技術仕様](https://toio.github.io/toio-spec/)
+- [【全体】toio™コア キューブ 技術仕様](https://toio.github.io/toio-spec/)
+- [【簡易プレイマットの仕様：】Position ID 一覧 | toio™コア キューブ 技術仕様 （toio コア キューブ（単体）付属の簡易プレイマット）](https://toio.github.io/toio-spec/docs/hardware_position_id#toio-%E3%82%B3%E3%82%A2-%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%96%E5%8D%98%E4%BD%93%E4%BB%98%E5%B1%9E%E3%81%AE%E7%B0%A1%E6%98%93%E3%83%97%E3%83%AC%E3%82%A4%E3%83%9E%E3%83%83%E3%83%88)
 
 ### toio の公式／非公式のライブラリや開発環境（p5.toio以外）
 - [【Unity】morikatron/toio-sdk-for-unity: Unityでtoio™コア キューブを制御するための開発環境](https://github.com/morikatron/toio-sdk-for-unity/)
