@@ -4,3 +4,5 @@
 
 ●書籍情報―I/O 2024年9月号  
 https://www.kohgakusha.co.jp/books/detail/4832
+
+各種情報は「 https://github.com/yo-to/io2024_toioWeb/tree/main/01 」をご覧ください
